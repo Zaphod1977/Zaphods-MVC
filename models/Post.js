@@ -24,7 +24,8 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isURL: true
+                notEmpty: true,
+                notContains: ' '
             }
         },
         text: {

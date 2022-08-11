@@ -14,7 +14,6 @@ Comment.init(
     date: {
         type: DataTypes.DATE,
         defaultValue: sequelize.literal("CURRENT_TIMESTAMP"),
-        allowNull: false,
     },
     comment_text: {
       type: DataTypes.STRING,

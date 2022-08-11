@@ -42,7 +42,7 @@ router.get('/', (req, res) => {
   });
   
   // get single post
-  router.get('/post/:post_url', (req, res) => {
+  router.get('/posts/:post_url', (req, res) => {
     Post.findOne({
       where: {
         post_url: req.params.post_url

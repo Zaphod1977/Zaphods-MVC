@@ -2,13 +2,17 @@ async function newFormHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="post-title"]').value;
-  const post_url = document.querySelector('input[name="post-url"]').value;
+  const post_url = document.querySelector('input[name="post-url"]').value.replaceAll(' ', '-').toLowerCase();
+  const text = document.querySelector('textarea[name="text"]').value;
+  const user_id = document.querySelector('input[name="user_id"]').value;
 
   const response = await fetch(`/api/posts`, {
     method: 'POST',
     body: JSON.stringify({
       title,
-      post_url
+      post_url,
+      text,
+      user_id
     }),
     headers: {
       'Content-Type': 'application/json'
