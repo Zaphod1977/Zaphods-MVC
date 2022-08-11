@@ -13,7 +13,7 @@ Comment.init(
     },
     date: {
         type: DataTypes.DATE,
-        defaultValue: sequalize.literal("CURRENT_TIMESTAMP"),
+        defaultValue: sequelize.literal("CURRENT_TIMESTAMP"),
         allowNull: false,
     },
     comment_text: {
