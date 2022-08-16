@@ -13,9 +13,16 @@ router.get('/', withAuth, (req, res) => {
         attributes: [
             'id',
             'post_url',
+            'text',
             'title',
             'created_at',
         ],
+        include: [
+            {
+                model: User,
+                attributes: ['username']
+            }
+        ]
     })
         .then(dbPostData => {
             const posts = dbPostData.map(post => post.get({ plain: true }));

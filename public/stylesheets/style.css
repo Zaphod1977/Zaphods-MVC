@@ -184,3 +184,15 @@
     padding: 1%;
     font-size: 110%;
   }
+
+  ol {
+    background-color: white;
+  }
+
+  .post {
+    background-color: white;
+  }
+
+  .content {
+    padding: 0 0 0 1em;
+  }
