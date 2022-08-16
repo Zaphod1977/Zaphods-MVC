@@ -37,6 +37,8 @@
   .JTN {
     background-color: bdb76b;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 2em;
+    
   }
   
   button:hover {
@@ -65,7 +67,7 @@
   }
   
   textarea {
-    min-width: 40%;
+    min-width: 100%;
     min-height: 100px;
   }
   
@@ -106,6 +108,7 @@
   main {
     flex: 1;
     padding: 2% 4%;
+    margin: 15px;
   }
   
   .btn-no-style {
@@ -137,6 +140,7 @@
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    padding: 0 0 0 1em;
   }
   
   .post .title span {
@@ -170,7 +174,7 @@
   }
   
   .new-post-form input {
-    width: 300px;
+    width: 100%;
   }
   
   .edit-post-form {
